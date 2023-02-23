@@ -18,7 +18,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .granddaddy-container {
     grid-template-columns: 1fr;
   }
@@ -137,7 +137,7 @@ footer {
   place-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   html {
     font-size: 80%;
   }
