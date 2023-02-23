@@ -6,6 +6,7 @@
 html {
   font-size: 100%;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -27,13 +28,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8em;
-  nav ul {
-    display: flex;
-    align-items: center;
-    li {
-      margin: 0 1em;
-    }
-  }
+}
+.nave-var nav ul {
+  display: flex;
+  align-items: center;
+}
+.nave-var nav ul li {
+  margin: 0 1em;
 }
 
 .main-info {
@@ -43,20 +44,20 @@ body {
   row-gap: 1em;
   padding-right: 0;
   padding-right: 40%;
-  h1 {
-    font-size: 3em;
-  }
-  p {
-    font-size: 1.5em;
-  }
-  form {
-    width: 100%;
-    input {
-      width: 80%;
-    }
-  }
+}
+.main-info h1 {
+  font-size: 3em;
+}
+.main-info p {
+  font-size: 1.5em;
+}
+.main-info form {
+  width: 100%;
+}
+.main-info form input {
+  width: 80%;
 }
 
 .image-hero {
   width: 100%;
-}
+}/*# sourceMappingURL=styles.css.map */
