@@ -4,11 +4,7 @@ This project is a reusable React component that implements a horizontal scrollin
 
 ## Installation
 
-To use this component in your React application, you can install it using npm:
-
-```
-npm install react-horizontal-scrolling-container
-```
+To use this component in your React application, you can just copy and paste the code. I try it to make as easy and simple to use this component in your code. Have fun with it!
 
 ## Usage
 
