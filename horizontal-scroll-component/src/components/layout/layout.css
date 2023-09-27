@@ -1,0 +1,97 @@
+.content {
+  --space: 1rem;
+  --space-md: calc(var(--space) * 2);
+  --content-max-width: 0;
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr
+    [content-start]
+    min(var(--content-max-width), 100% - var(--space-md) * 2)
+    [content-end]
+    1fr [full-end];
+}
+
+.content > * {
+  grid-column: content;
+}
+
+.content > * + * {
+  margin-block-start: var(--space);
+}
+
+.gallery[data-direction="left"] {
+  direction: rtl;
+}
+
+/* ========================== */
+/* ===== Gallery styles ===== */
+/* ========================== */
+
+.gallery {
+  grid-column: full;
+  display: grid;
+  grid-template-columns: inherit;
+  padding-block: var(--space-md);
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  scroll-snap-align: start;
+}
+
+.gallery::-webkit-scrollbar {
+  inline-size: 0 !important;
+  display: none;
+}
+
+.gallery .floating_content {
+  grid-column: content;
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+}
+
+.gallery .floating_content > * {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  inline-size: 100%;
+  max-inline-size: 25rem;
+  font-size: 2rem;
+  background: #f08080; /* Change this color */
+  border-radius: 4px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.gallery .floating_content[data-images="video"] > * {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery .floating_content[data-images="square"] > * {
+  aspect-ratio: 1;
+}
+
+.gallery .floating_content > *.lg {
+  max-inline-size: 35rem;
+}
+
+.gallery .floating_content > *.sm {
+  max-inline-size: 15rem;
+}
+
+.gallery .floating_content::after {
+  content: "";
+  align-self: stretch;
+  padding-inline-end: max(
+    var(--space),
+    (100vw - var(--content-max-width)) / 2 - var(--space)
+  );
+}
+
+/* Feel free to delete this styles */
+.gallery img {
+  border-radius: 8px;
+}
