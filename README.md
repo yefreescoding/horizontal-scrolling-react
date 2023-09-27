@@ -12,13 +12,13 @@ To use this component in your React project, follow these steps:
 
 3. Import the `GalleryDiv` component into your desired React component:
 
-   ```javascript
+   ```tsx
    import GalleryDiv from "./path-to-your-components/GalleryDiv";
    ```
 
 4. Use the `GalleryDiv` component within your component, providing the content you want to display within the gallery as children:
 
-   ```javascript
+   ```tsx
    <GalleryDiv>{/* Your gallery content goes here */}</GalleryDiv>
    ```
 
@@ -28,7 +28,7 @@ To use this component in your React project, follow these steps:
 
 Here's an example of how to use the `GalleryDiv` component within your React component:
 
-```jsx
+```tsx
 import React from "react";
 import "./App.css";
 import Layout from "./components/Layout";
