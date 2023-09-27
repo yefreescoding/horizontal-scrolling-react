@@ -28,7 +28,7 @@ To use this component in your React project, follow these steps:
 
 Here's an example of how to use the `GalleryDiv` component within your React component:
 
-```javascript
+```jsx
 import React from "react";
 import "./App.css";
 import Layout from "./components/Layout";
