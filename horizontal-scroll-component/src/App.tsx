@@ -15,20 +15,22 @@ function App() {
       </p>
       <p>This would be the normal configuration "out of the box" we can say:</p>
       <GalleryDiv galleryItemsAspectRatio="video">
-        <img src="/images/test-img-2.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images" />
+        <img src="/images/image-2.jpg" alt="test images" />
+        <img src="/images/image-3.jpg" alt="test images" />
+        <img src="/images/image-6.jpg" alt="test images" />
+        <img src="/images/image-4.jpg" alt="test images" />
+        <img src="/images/image-5.jpg" alt="test images" />
       </GalleryDiv>
       <p>
         You can use set it in reverse as well, making the content appear from
         the left to the right:
       </p>
       <GalleryDiv direction="left" galleryItemsAspectRatio="video">
-        <img src="/images/test-img-2.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images" />
+        <img src="/images/image-2.jpg" alt="test images" />
+        <img src="/images/image-3.jpg" alt="test images" />
+        <img src="/images/image-6.jpg" alt="test images" />
+        <img src="/images/image-4.jpg" alt="test images" />
+        <img src="/images/image-5.jpg" alt="test images" />
       </GalleryDiv>
       <p>
         There's two aspect-ratio types to configure this component: square = 1 x
@@ -40,29 +42,26 @@ function App() {
       </p>
       <p>This is aspect ratio square:</p>
       <GalleryDiv direction="normal" galleryItemsAspectRatio="square">
-        <img src="/images/square-4.jpg" alt="test images" />
+        <img src="/images/image-4.jpg" alt="test images" />
         <img src="/images/square-2.jpg" alt="test images" />
         <img src="/images/square-1.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images 2" />
+        <img src="/images/image-6.jpg" alt="test images 2" />
       </GalleryDiv>
       <p>And this is aspect ratio video:</p>
       <GalleryDiv direction="left" galleryItemsAspectRatio="video">
         <img src="/images/square-4.jpg" alt="test images" />
         <img src="/images/square-2.jpg" alt="test images" />
         <img src="/images/square-1.jpg" alt="test images" />
-        <img src="/images/test-img-2.jpg" alt="test images 2" />
+        <img src="/images/image-6.jpg" alt="test images 2" />
       </GalleryDiv>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde
-        sunt fugit placeat molestiae quam nesciunt dolorum enim labore quasi sit
-        eum, quo assumenda fugiat beatae. Sit, ut corrupti suscipit iusto,
-        excepturi dolorum unde magnam repellat totam iure commodi dolor natus
-        dignissimos impedit, eos in.
+        You can also change the size of the images. Default there's two sizes
+        available but again you can create your own it is super easy.
       </p>
-      <GalleryDiv direction="right" galleryItemsAspectRatio="video">
-        <img src="/images/test-img-2.jpg" alt="test images" className="sm" />
+      <GalleryDiv direction="right" galleryItemsAspectRatio="square">
+        <img src="/images/image-2.jpg" alt="test images" className="sm" />
         <img src="/images/test-img-3.jpg" alt="test images" className="lg" />
-        <img src="/images/test-img-4.jpg" alt="test images" />
+        <img src="/images/test-img-4.jpg" alt="test images" className="sm" />
         <img src="/images/test-img-5.jpg" alt="test images" className="lg" />
       </GalleryDiv>
     </Layout>
