@@ -30,20 +30,26 @@ export default function Header() {
       id="page-header"
       className={`header ${headerActive ? "active" : ""}`}
     >
-      <div className="site-name">Scroll to see...</div>
-      <nav>
+      <nav className="nav">
+        <div className="site-name">Scroll to see...</div>
         <ul className="menu" role="list">
           <li>
-            <a href="#">Docs</a>
+            <a
+              target="_blank"
+              href="https://github.com/yefreescoding/horizontal-scrolling-react/blob/main/README.md"
+            >
+              Docs
+            </a>
           </li>
           <li>
-            <a href="#">Github</a>
+            <a target="_blank" href="https://github.com/yefreescoding">
+              Github
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Twitter</a>
+            <a href="https://twitter.com/YefreeCodes" target="_blank">
+              Twitter
+            </a>
           </li>
         </ul>
       </nav>

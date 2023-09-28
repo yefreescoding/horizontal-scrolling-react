@@ -27,6 +27,7 @@ function App() {
           <img src="/images/image-4.jpg" alt="test images" />
           <img src="/images/image-5.jpg" alt="test images" />
         </GalleryDiv>
+        <h2>## Make it reverse</h2>
         <p>
           You can use set it in reverse as well, making the content appear from
           the left to the right:
@@ -38,6 +39,10 @@ function App() {
           <img src="/images/image-4.jpg" alt="test images" />
           <img src="/images/image-5.jpg" alt="test images" />
         </GalleryDiv>
+        <h2>
+          ## Change the aspect ratio of the images or cards inside the{" "}
+          {"<GalleryDiv>"} tag
+        </h2>
         <p>
           There's two aspect-ratio types to configure this component: square = 1
           x 1; video = 19 x 9.{" "}
@@ -46,14 +51,14 @@ function App() {
             personal preferences.
           </strong>
         </p>
-        <p>This is aspect ratio square:</p>
+        <p>• This is aspect ratio square:</p>
         <GalleryDiv direction="normal" galleryItemsAspectRatio="square">
           <img src="/images/image-4.jpg" alt="test images" />
           <img src="/images/square-2.jpg" alt="test images" />
           <img src="/images/square-1.jpg" alt="test images" />
           <img src="/images/image-6.jpg" alt="test images 2" />
         </GalleryDiv>
-        <p>And this is aspect ratio video:</p>
+        <p>• And this is aspect ratio video:</p>
         <GalleryDiv direction="left" galleryItemsAspectRatio="video">
           <img src="/images/square-4.jpg" alt="test images" />
           <img src="/images/square-2.jpg" alt="test images" />
