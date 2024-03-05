@@ -6,17 +6,17 @@ function App() {
   return (
     <>
       <Header />
-      <Layout contentMaxWidth="80ch">
+      <div className="cover">
         <h1 className="headline">
           Horizontal scrolling in a centered max-width container react
           component.
         </h1>
         <p>
-          This React component allows you to create a horizontal scrolling
-          gallery within a centered max-width container. It's designed to
-          showcase a collection of images or other content that users can scroll
-          through horizontally.
+          Long title but super useful This React component allows you to create
+          a horizontal scrolling gallery within a centered max-width container.
         </p>
+      </div>
+      <Layout contentMaxWidth="80ch">
         <p>
           This would be the normal configuration "out of the box" we can say:
         </p>

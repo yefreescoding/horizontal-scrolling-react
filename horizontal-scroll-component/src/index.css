@@ -1,8 +1,11 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 :root {
-  --text: hsl(270, 20%, 2%);
-  --background: hsl(240, 20%, 99%);
+  --text: hsl(270, 20%, 20%);
+  --background: hsl(26, 20%, 93%);
   --primary: hsl(77, 22%, 62%);
-  --secondary: hsla(137, 22%, 81%, 0.3);
+  --secondary: hsla(41, 10%, 42%, 0.3);
   --accent: hsl(77, 22%, 41%);
 }
 
@@ -65,26 +68,28 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+  padding: 4px 6px;
+  transition: all 200ms linear;
+  border-radius: 4px;
 }
 
 a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
+  background-color: var(--secondary);
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: "Bebas Neue", sans-serif;
   text-wrap: balance;
   margin-top: 5rem;
 }
 
 h1 {
-  font-size: clamp(2rem, 2.5vw, 4rem);
+  font-size: clamp(3.5rem, 2vw, 5rem);
   font-weight: 900;
   line-height: 1.2;
 }
@@ -103,6 +108,7 @@ p {
 /* ============ HEADER STYLES ============ */
 
 .header {
+  z-index: 10;
   position: sticky;
   top: 0;
   flex-wrap: wrap;
@@ -131,10 +137,49 @@ p {
 }
 
 .site-name {
-  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  img {
+    color: inherit;
+    background-color: var(--background);
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    transform: translateY(25px) translateX(-80px);
+    animation-name: mouseMove;
+    animation-duration: 1.2s;
+    animation-iteration-count: 2;
+  }
+}
+
+@keyframes mouseMove {
+  0% {
+    transform: translateY(25px) translateX(-80px);
+  }
+  50% {
+    transform: translateY(15px) translateX(15px);
+  }
+  100% {
+    transform: translateY(25px) translateX(-80px);
+  }
 }
 
 [data-observer-intercept] {
   position: absolute;
   top: 300px;
+}
+
+/* ============ HEADER STYLES ============ */
+
+.cover {
+  width: min(100%, 80ch);
+  margin: 20vh auto;
+  text-align: center;
+
+  p {
+    margin: 2rem 0;
+  }
 }

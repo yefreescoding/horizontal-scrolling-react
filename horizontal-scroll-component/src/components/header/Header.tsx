@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import mouseSvg from "../../assets/mouse.svg";
+
 export default function Header() {
   const [headerActive, setHeaderActive] = useState(false);
 
@@ -31,7 +33,10 @@ export default function Header() {
       className={`header ${headerActive ? "active" : ""}`}
     >
       <nav className="nav">
-        <div className="site-name">Scroll to see...</div>
+        <div className="site-name">
+          <p>Scroll to see...</p>
+          <img src={mouseSvg} alt="icon" />
+        </div>
         <ul className="menu" role="list">
           <li>
             <a
