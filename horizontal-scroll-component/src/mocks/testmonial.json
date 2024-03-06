@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Ana García",
+    "profesion": "Diseñadora web",
+    "testimonio": "El servicio ha sido increíble. Me ayudaron a crear una página web que refleja perfectamente mi estilo y necesidades. ¡Estoy muy contenta!",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "Pedro López",
+    "profesion": "Emprendedor",
+    "testimonio": "Su atención al cliente es excelente. Siempre están dispuestos a responder mis preguntas y ayudarme a solucionar cualquier problema. ¡Los recomiendo totalmente!",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "María Pérez",
+    "profesion": "Estudiante",
+    "testimonio": "Su servicio es muy fácil de usar. No tengo mucha experiencia en tecnología, pero pude crear mi propio sitio web sin problemas. ¡Muchas gracias!",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "Juan Martínez",
+    "profesion": "Fotógrafo",
+    "testimonio": "Me encantó la variedad de plantillas que ofrecen. Encontré una que se ajustaba perfectamente a mi estilo de fotografía. ¡Estoy muy satisfecho con el resultado!",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "Sofia Rodríguez",
+    "profesion": "Escritora",
+    "testimonio": "Su servicio me ha permitido crear un blog profesional y atractivo. Estoy muy contenta con el aumento de tráfico que he recibido desde que lo utilizo.",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "David González",
+    "profesion": "Artista",
+    "testimonio": "Su plataforma me ha dado la oportunidad de mostrar mi trabajo al mundo. Estoy muy agradecido por su ayuda.",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "Laura Fernández",
+    "profesion": "Chef",
+    "testimonio": "Su servicio me ha permitido crear un sitio web donde puedo compartir mis recetas con el mundo. Estoy muy contenta con la respuesta que he recibido.",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "Miguel Santos",
+    "profesion": "Músico",
+    "testimonio": "Su plataforma me ha permitido vender mi música online. Estoy muy contento con los resultados que he obtenido.",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "Elena Martín",
+    "profesion": "Profesora",
+    "testimonio": "Su servicio me ha permitido crear un sitio web donde puedo compartir mis materiales educativos. Estoy muy contenta con la cantidad de estudiantes que he podido ayudar.",
+    "imagen": "avatar-girl-a.jpg"
+  },
+  {
+    "nombre": "Francisco Ruiz",
+    "profesion": "Abogado",
+    "testimonio": "Su servicio me ha permitido crear un sitio web profesional para mi bufete de abogados. Estoy muy satisfecho con el resultado.",
+    "imagen": "avatar-girl-a.jpg"
+  }
+]

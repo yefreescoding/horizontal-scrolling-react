@@ -53,15 +53,15 @@
 
 .gallery .floating_content > * {
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   scroll-snap-align: center;
   inline-size: 100%;
   max-inline-size: 25rem;
-  font-size: 2rem;
-  background: #f08080; /* Change this color */
-  border-radius: 4px;
+  /* font-size: 2rem; */
+  /* background: none;  Change this color  */
+  /* border-radius: 4px; */
   overflow: hidden;
   object-fit: cover;
 }
@@ -72,6 +72,10 @@
 
 .gallery .floating_content[data-images="square"] > * {
   aspect-ratio: 1;
+}
+
+.gallery .floating_content[data-images="regular"] > * {
+  aspect-ratio: 0;
 }
 
 .gallery .floating_content > *.lg {

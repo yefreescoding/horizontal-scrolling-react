@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 
 interface GalleryDivProps {
-  children: ReactNode;
+  children: ReactNode[];
   direction?: string;
-  galleryItemsAspectRatio: "video" | "square";
+  galleryItemsAspectRatio: "video" | "square" | "regular";
 }
 
 export default function GalleryDiv({

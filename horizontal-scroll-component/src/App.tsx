@@ -1,6 +1,9 @@
 import Layout from "./components/layout/Layout";
 import GalleryDiv from "./components/layout/GalleryDiv";
 import Header from "./components/header/Header";
+import { Testimonial } from "./components/testimonial/Testimonial";
+
+import testimonials from "./mocks/testmonial.json";
 
 function App() {
   return (
@@ -27,7 +30,7 @@ function App() {
           <img src="/images/image-4.jpg" alt="test images" />
           <img src="/images/image-5.jpg" alt="test images" />
         </GalleryDiv>
-        <h2>## Make it reverse</h2>
+        <h2>Make it reverse</h2>
         <p>
           You can use set it in reverse as well, making the content appear from
           the left to the right:
@@ -40,7 +43,7 @@ function App() {
           <img src="/images/image-5.jpg" alt="test images" />
         </GalleryDiv>
         <h2>
-          ## Change the aspect ratio of the images or cards inside the{" "}
+          Change the aspect ratio of the images or cards inside the{" "}
           {"<GalleryDiv>"} tag
         </h2>
         <p>
@@ -74,6 +77,18 @@ function App() {
           <img src="/images/test-img-3.jpg" alt="test images" className="lg" />
           <img src="/images/test-img-4.jpg" alt="test images" className="sm" />
           <img src="/images/test-img-5.jpg" alt="test images" className="lg" />
+        </GalleryDiv>
+        <p>Developers that have used this component absolutely loved it</p>
+        <GalleryDiv direction="right" galleryItemsAspectRatio="regular">
+          {testimonials.map((item) => (
+            <Testimonial
+              key={item.nombre} // Don't forget to add a unique key prop
+              name={item.nombre}
+              imagen={item.imagen}
+              testimonial={item.testimonio}
+              profesion={item.profesion}
+            />
+          ))}
         </GalleryDiv>
       </Layout>
     </>

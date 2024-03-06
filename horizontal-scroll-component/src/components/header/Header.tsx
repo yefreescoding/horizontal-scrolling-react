@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import "./header.css";
+
 import mouseSvg from "../../assets/mouse.svg";
 
 export default function Header() {
