@@ -23,6 +23,23 @@
   gap: 1rem;
 }
 
+.menu li {
+  border-radius: 8px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 300ms ease;
+}
+
+.menu li:hover {
+  background-color: var(--secondary);
+}
+
+.menu li:hover svg {
+  transform: translateY(-3px);
+}
+
 .nav {
   width: min(100%, 80ch);
   justify-content: space-between;

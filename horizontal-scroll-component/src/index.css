@@ -68,14 +68,12 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
-  padding: 4px 6px;
-  transition: all 200ms linear;
-  border-radius: 4px;
+  /* transition: all 200ms linear; */
 }
 
-a:hover {
+/* a:hover {
   background-color: var(--secondary);
-}
+} */
 
 h1,
 h2,
@@ -101,7 +99,7 @@ h2 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(1.125rem, 2vw, 1.3rem);
   line-height: 1.5;
 }
 
