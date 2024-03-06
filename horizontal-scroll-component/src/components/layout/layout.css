@@ -78,12 +78,19 @@
   aspect-ratio: 0;
 }
 
-.gallery .floating_content > *.lg {
+.gallery .floating_content > *.xl {
   max-inline-size: 35rem;
+}
+
+.gallery .floating_content > *.lg {
+  max-inline-size: 25rem;
 }
 
 .gallery .floating_content > *.sm {
   max-inline-size: 15rem;
+}
+.gallery .floating_content > *.xs {
+  max-inline-size: 10rem;
 }
 
 .gallery .floating_content::after {
@@ -97,5 +104,5 @@
 
 /* Feel free to delete this styles */
 .gallery img {
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }

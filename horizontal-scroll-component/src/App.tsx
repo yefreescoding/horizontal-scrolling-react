@@ -3,6 +3,11 @@ import GalleryDiv from "./components/layout/GalleryDiv";
 import Header from "./components/header/Header";
 import { Testimonial } from "./components/testimonial/Testimonial";
 
+import reactSvg from "/images/icons/react.svg";
+import viteSvg from "/images/icons/vite.svg";
+import typescriptSvg from "/images/icons/typescript.svg";
+import cssSvg from "/images/icons/css.svg";
+
 import testimonials from "./mocks/testmonial.json";
 
 function App() {
@@ -15,22 +20,48 @@ function App() {
           component.
         </h1>
         <p>
-          Long title but super useful This React component allows you to create
+          Long title but super useful react component that allows you to create
           a horizontal scrolling gallery within a centered max-width container.
         </p>
       </div>
       <Layout contentMaxWidth="80ch">
-        <p>
-          This would be the normal configuration "out of the box" we can say:
-        </p>
-        <GalleryDiv galleryItemsAspectRatio="video">
-          <img src="/images/image-2.jpg" alt="test images" />
-          <img src="/images/image-3.jpg" alt="test images" />
-          <img src="/images/image-6.jpg" alt="test images" />
-          <img src="/images/image-4.jpg" alt="test images" />
-          <img src="/images/image-5.jpg" alt="test images" />
+        <GalleryDiv galleryItemsAspectRatio="regular">
+          <img src="/images/image-2.jpg" alt="test images" className="lg" />
+          <img src="/images/image-3.jpg" alt="test images" className="lg" />
+          <img src="/images/image-6.jpg" alt="test images" className="lg" />
+          <img src="/images/image-4.jpg" alt="test images" className="lg" />
+          <img src="/images/image-5.jpg" alt="test images" className="lg" />
         </GalleryDiv>
-        <h2>Make it reverse</h2>
+        {/* <GalleryDiv galleryItemsAspectRatio="regular">
+          
+        </GalleryDiv> */}
+        <div className="cover">
+          <h2>It's not magic... is CSS!!</h2>
+          <p>
+            with the help of the best front end library React, TypeScript and
+            Vite.
+          </p>
+          <div className="tech">
+            <img className="xs" src={cssSvg} alt="" />
+            <img className="xs" src={reactSvg} alt="" />
+            <img className="xs" src={typescriptSvg} alt="" />
+            <img className="xs" src={viteSvg} alt="" />
+          </div>
+        </div>
+        <div className="cover">
+          <h2>
+            Inspired by
+            <a className="highlight" href="" target="_blank">
+              {" "}
+              Ryan Mulligan
+            </a>
+            's post.
+          </h2>
+          <a href="https://ryanmulligan.dev/blog/x-scrolling-centered-max-width-container/">
+            <img className="xs" src="/images/ryan-post.png" alt="" />
+          </a>
+        </div>
+        <h2 className="second_title">Make it reverse</h2>
         <p>
           You can use set it in reverse as well, making the content appear from
           the left to the right:

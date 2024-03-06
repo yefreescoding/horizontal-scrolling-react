@@ -87,13 +87,13 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(3.5rem, 2vw, 5rem);
+  font-size: clamp(3.8rem, 3.5vw, 6rem);
   font-weight: 900;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -105,10 +105,27 @@ p {
 
 .cover {
   width: min(100%, 80ch);
-  margin: 20vh auto;
+  margin: 8vh auto;
   text-align: center;
 
   p {
     margin: 2rem 0;
+  }
+
+  img {
+    border-radius: 1rem;
+  }
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  img {
+    width: 5em;
+    aspect-ratio: 1;
+    object-fit: contain;
   }
 }
