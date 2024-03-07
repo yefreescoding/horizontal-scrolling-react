@@ -87,7 +87,7 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(3.8rem, 3.5vw, 6rem);
+  font-size: clamp(3rem, 3.5vw, 6rem);
   font-weight: 900;
   line-height: 1.2;
 }
@@ -99,21 +99,53 @@ h2 {
 }
 
 p {
-  font-size: clamp(1.125rem, 2vw, 1.3rem);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
   line-height: 1.5;
 }
 
 .cover {
+  /* overflow: hidden; */
+  isolation: isolate;
+  position: relative;
   width: min(100%, 80ch);
-  margin: 8vh auto;
+  margin: 20vh auto 0 auto;
   text-align: center;
 
   p {
     margin: 2rem 0;
   }
+}
 
-  img {
-    border-radius: 1rem;
+.cover a {
+  z-index: 10;
+}
+
+.cover a img {
+  z-index: 10;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem hsl(0, 0%, 88%);
+}
+
+.cover__illustration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17em;
+  aspect-ratio: 1;
+  object-fit: contain;
+  transform: translateY(-5rem);
+}
+
+.cover__illustration-idea {
+  z-index: -1;
+  left: 0;
+}
+
+@media (width < 46.9375em) {
+  .cover__illustration {
+    /* background-color: red; */
+    width: 14em;
+    transform: translateY(-7rem);
   }
 }
 
@@ -124,8 +156,9 @@ p {
   gap: 1rem;
 
   img {
-    width: 5em;
+    width: 4em;
     aspect-ratio: 1;
-    object-fit: contain;
+    object-fit: fill;
+    border-radius: none;
   }
 }

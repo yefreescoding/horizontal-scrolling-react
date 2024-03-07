@@ -36,10 +36,15 @@ function App() {
           
         </GalleryDiv> */}
         <div className="cover">
+          <img
+            className="cover__illustration"
+            src="/images/illustrations/coding-ill-bg-2.png"
+            alt="Illustration of a person using a laptop."
+          />
           <h2>It's not magic... is CSS!!</h2>
           <p>
-            with the help of the best front end library React, TypeScript and
-            Vite.
+            Developing with the help of the best front end technologies library
+            React, TypeScript and Vite.
           </p>
           <div className="tech">
             <img className="xs" src={cssSvg} alt="" />
@@ -49,6 +54,11 @@ function App() {
           </div>
         </div>
         <div className="cover">
+          <img
+            className="cover__illustration cover__illustration-idea"
+            src="/images/illustrations/idea-ill-bg.png"
+            alt="Illustration of a person having an idea."
+          />
           <h2>
             Inspired by
             <a className="highlight" href="" target="_blank">
