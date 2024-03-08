@@ -71,19 +71,115 @@ function App() {
             <img className="xs" src="/images/ryan-post.png" alt="" />
           </a>
         </div>
-        <h2 className="second_title">Make it reverse</h2>
+        <h2 className="sub_title">From left to right or right to left</h2>
         <p>
           You can use set it in reverse as well, making the content appear from
-          the left to the right:
+          the left of the screen scrolling it all the way to the right:
         </p>
         <GalleryDiv direction="left" galleryItemsAspectRatio="video">
+          <div className="gallery__card">
+            <div className="card__header">
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                strokeWidth="1.2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M4.9984 2H2V4.9984H4.9984V2Z"
+                  stroke="currentColor"
+                  strokeWidth="1.2"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.9978 3.50098H18.998"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M3.49878 4.99805V19"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M20.4968 4.99951V19.0015"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.9978 20.501H18.998"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.9984 19H2V21.9984H4.9984V19Z"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M21.9964 2.00195H18.998V5.00035H21.9964V2.00195Z"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M21.9964 19.002H18.998V22.0004H21.9964V19.002Z"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  stroke-miterlimit="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <svg
+                width="30px"
+                height="30px"
+                strokeWidth="1.9"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M14 12C14 15.3137 11.3137 18 8 18C4.68629 18 2 15.3137 2 12C2 8.68629 4.68629 6 8 6C11.3137 6 14 8.68629 14 12ZM14 12H22M22 12L19 9M22 12L19 15"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <p>Super easy just adding the value "left" to the prop direction</p>
+          </div>
           <img src="/images/image-2.jpg" alt="test images" />
           <img src="/images/image-3.jpg" alt="test images" />
           <img src="/images/image-6.jpg" alt="test images" />
           <img src="/images/image-4.jpg" alt="test images" />
           <img src="/images/image-5.jpg" alt="test images" />
         </GalleryDiv>
-        <h2>
+        <h2 className="sub_title">
           Change the aspect ratio of the images or cards inside the{" "}
           {"<GalleryDiv>"} tag
         </h2>
@@ -95,7 +191,7 @@ function App() {
             personal preferences.
           </strong>
         </p>
-        <p>• This is aspect ratio square:</p>
+        <h3>• This is aspect ratio square:</h3>
         <GalleryDiv direction="normal" galleryItemsAspectRatio="square">
           <img src="/images/image-4.jpg" alt="test images" />
           <img src="/images/square-2.jpg" alt="test images" />

@@ -28,6 +28,7 @@
 /* ========================== */
 
 .gallery {
+  /* margin-block: 5vh; */
   grid-column: full;
   display: grid;
   grid-template-columns: inherit;
@@ -100,9 +101,4 @@
     var(--space),
     (100vw - var(--content-max-width)) / 2 - var(--space)
   );
-}
-
-/* Feel free to delete this styles */
-.gallery img {
-  /* border-radius: 8px; */
 }

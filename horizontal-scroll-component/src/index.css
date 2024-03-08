@@ -2,18 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
-  --text: hsl(270, 20%, 20%);
-  --background: hsl(26, 20%, 93%);
-  --primary: hsl(77, 22%, 62%);
-  --secondary: hsla(41, 10%, 42%, 0.3);
-  --accent: hsl(77, 22%, 41%);
+  --text: hsl(0, 0%, 7%);
+  --background: #ffffff;
+  --primary: #f6f5f4;
+  --secondary: hsl(0, 0%, 27%);
+  --accent: hsl(209, 91%, 50%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text: hsl(270, 20%, 95%);
     --background: hsl(240, 20%, 13%);
-    --primary: hsl(77, 22%, 62%);
+    --primary: #f6f5f4;
     --secondary: hsla(140, 2%, 30%, 0.3);
     --accent: hsl(77, 22%, 41%);
   }
@@ -95,12 +95,20 @@ h1 {
 h2 {
   font-size: clamp(2rem, 2.5vw, 2.8rem);
   font-weight: 600;
-  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: clamp(1.85rem, 2vw, 2rem);
+  font-weight: 600;
 }
 
 p {
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   line-height: 1.5;
+}
+
+.sub_title {
+  margin: 5rem 0 0;
 }
 
 .cover {
@@ -116,16 +124,17 @@ p {
   }
 }
 
-.cover a {
-  z-index: 10;
-}
-
 .cover a img {
   z-index: 10;
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem hsl(0, 0%, 88%);
+  transition: all 240ms ease-in;
 }
 
+.cover a img:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 1.3rem 1rem hsl(0, 0%, 90%);
+}
 .cover__illustration {
   position: absolute;
   top: 0;
@@ -160,5 +169,28 @@ p {
     aspect-ratio: 1;
     object-fit: fill;
     border-radius: none;
+  }
+}
+
+.gallery__card {
+  direction: ltr;
+  padding: 1rem;
+  border: 1px solid var(--secondary);
+
+  .card__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  svg {
+    color: var(--accent);
   }
 }
