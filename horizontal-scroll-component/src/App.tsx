@@ -93,64 +93,64 @@ function App() {
                   stroke="currentColor"
                   strokeWidth="1.2"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
                 <path
                   d="M4.9978 3.50098H18.998"
                   stroke="currentColor"
                   strokeWidth="1.9"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
                 <path
                   d="M3.49878 4.99805V19"
                   stroke="currentColor"
                   strokeWidth="1.9"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
                 <path
                   d="M20.4968 4.99951V19.0015"
                   stroke="currentColor"
                   strokeWidth="1.9"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
                 <path
                   d="M4.9978 20.501H18.998"
                   stroke="currentColor"
                   strokeWidth="1.9"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
                 <path
                   d="M4.9984 19H2V21.9984H4.9984V19Z"
                   stroke="currentColor"
                   strokeWidth="1.9"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
                 <path
                   d="M21.9964 2.00195H18.998V5.00035H21.9964V2.00195Z"
                   stroke="currentColor"
                   strokeWidth="1.9"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
                 <path
                   d="M21.9964 19.002H18.998V22.0004H21.9964V19.002Z"
                   stroke="currentColor"
                   strokeWidth="1.9"
                   stroke-miterlimit="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>
               <svg
@@ -180,42 +180,169 @@ function App() {
           <img src="/images/image-5.jpg" alt="test images" />
         </GalleryDiv>
         <h2 className="sub_title">
-          Change the aspect ratio of the images or cards inside the{" "}
-          {"<GalleryDiv>"} tag
+          Change the aspect ratio of the cards inside the component.
         </h2>
         <p>
-          There's two aspect-ratio types to configure this component: square = 1
-          x 1; video = 19 x 9.{" "}
-          <strong>
-            *You can change this settings in the layout.css files to your
-            personal preferences.
-          </strong>
+          By default there are two options for you to chose: aspect ratio square
+          4 x 4, or aspect ratio video 16 x 9. You just have to add the value to
+          the `galleryItemsAspectRatio` prop.
         </p>
-        <h3>• This is aspect ratio square:</h3>
         <GalleryDiv direction="normal" galleryItemsAspectRatio="square">
-          <img src="/images/image-4.jpg" alt="test images" />
-          <img src="/images/square-2.jpg" alt="test images" />
-          <img src="/images/square-1.jpg" alt="test images" />
-          <img src="/images/image-6.jpg" alt="test images 2" />
+          <div className="gallery__card md">
+            <div className="card__header">
+              <svg
+                width="30px"
+                height="30px"
+                stroke-width="1.9"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <p> This is the aspect ratio square.</p>
+          </div>
+          <img src="/images/image-4.jpg" alt="test images" className="md" />
+          <img src="/images/square-2.jpg" alt="test images" className="md" />
+          <img src="/images/square-1.jpg" alt="test images" className="md" />
+          <img src="/images/image-6.jpg" alt="test images 2" className="md" />
         </GalleryDiv>
-        <p>• And this is aspect ratio video:</p>
         <GalleryDiv direction="left" galleryItemsAspectRatio="video">
-          <img src="/images/square-4.jpg" alt="test images" />
-          <img src="/images/square-2.jpg" alt="test images" />
-          <img src="/images/square-1.jpg" alt="test images" />
-          <img src="/images/image-6.jpg" alt="test images 2" />
+          <div className="gallery__card md">
+            <div className="card__header">
+              <svg
+                width="30px"
+                height="30px"
+                stroke-width="1.9"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <p> This is the aspect ratio video.</p>
+          </div>
+          <img src="/images/image-4.jpg" alt="test images" className="md" />
+          <img src="/images/square-2.jpg" alt="test images" className="md" />
+          <img src="/images/square-1.jpg" alt="test images" className="md" />
+          <img src="/images/image-6.jpg" alt="test images 2" className="md" />
         </GalleryDiv>
+        <h2 className="sub_title">4 different sizes to choose from</h2>
         <p>
           You can also change the size of the images. Default there's two sizes
           available but again you can create your own it is super easy.
         </p>
         <GalleryDiv direction="right" galleryItemsAspectRatio="square">
-          <img src="/images/image-2.jpg" alt="test images" className="sm" />
-          <img src="/images/test-img-3.jpg" alt="test images" className="lg" />
-          <img src="/images/test-img-4.jpg" alt="test images" className="sm" />
+          <div className="gallery__card xs">
+            <div className="card__header">
+              <svg
+                width="20px"
+                height="20px"
+                stroke-width="1.9"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <p> xs: xSmall.</p>
+          </div>
+          <img src="/images/image-2.jpg" alt="test images" className="xs" />
+          <div className="gallery__card sm">
+            <div className="card__header">
+              <svg
+                width="25px"
+                height="25px"
+                stroke-width="1.9"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <p> sm: small.</p>
+          </div>
+          <img src="/images/test-img-3.jpg" alt="test images" className="sm" />
+          <div className="gallery__card md">
+            <div className="card__header">
+              <svg
+                width="27px"
+                height="27px"
+                stroke-width="1.9"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <p> md: medium.</p>
+          </div>
+          <img src="/images/test-img-4.jpg" alt="test images" className="md" />
+          <div className="gallery__card lg">
+            <div className="card__header">
+              <svg
+                width="30px"
+                height="30px"
+                stroke-width="1.9"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="currentColor"
+              >
+                <path
+                  d="M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <p> lg: large</p>
+          </div>
           <img src="/images/test-img-5.jpg" alt="test images" className="lg" />
         </GalleryDiv>
-        <p>Developers that have used this component absolutely loved it</p>
+        <p>Developers that have used this component absolutely loved it xd.</p>
         <GalleryDiv direction="right" galleryItemsAspectRatio="regular">
           {testimonials.map((item) => (
             <Testimonial

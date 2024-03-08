@@ -5,7 +5,7 @@
   --text: hsl(0, 0%, 7%);
   --background: #ffffff;
   --primary: #f6f5f4;
-  --secondary: hsl(0, 0%, 27%);
+  --secondary: hsl(0, 0%, 57%);
   --accent: hsl(209, 91%, 50%);
 }
 
@@ -119,7 +119,7 @@ p {
   margin: 20vh auto 0 auto;
   text-align: center;
 
-  p {
+  & p {
     margin: 2rem 0;
   }
 }
@@ -152,7 +152,6 @@ p {
 
 @media (width < 46.9375em) {
   .cover__illustration {
-    /* background-color: red; */
     width: 14em;
     transform: translateY(-7rem);
   }
@@ -164,7 +163,7 @@ p {
   justify-content: center;
   gap: 1rem;
 
-  img {
+  & img {
     width: 4em;
     aspect-ratio: 1;
     object-fit: fill;
@@ -176,21 +175,23 @@ p {
   direction: ltr;
   padding: 1rem;
   border: 1px solid var(--secondary);
+  display: flex;
+  flex-flow: column;
 
-  .card__header {
+  & .card__header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
 
-  p {
-    margin-top: 2rem;
+  & p {
+    margin: auto 0;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.25;
   }
 
-  svg {
+  & svg {
     color: var(--accent);
   }
 }
